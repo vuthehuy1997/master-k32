@@ -151,7 +151,9 @@ def main():
 
     if github_link:
         print("Liên kết GitHub của bài báo:")
-        print(github_link)
+        for k in github_link:
+            print('_'*20)
+            print("Nguồn: {}\nKết quả tìm kiếm: {}".format(k, github_link[k]))
     else:
         print("Không tìm thấy liên kết GitHub trong bài báo.")
 
